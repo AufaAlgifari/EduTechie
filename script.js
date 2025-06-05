@@ -1,2 +1,7 @@
-// Tambahkan fitur interaktif di sini jika perlu (misal: tombol show/hide, pop-up beasiswa, dll)
-console.log("Website EduCoding aktif!");
+const toggleBtn = document.getElementById("toggle-theme");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  toggleBtn.textContent = document.body.classList.contains("dark-mode") ? "☀️ Mode Terang" : "🌓 Mode Gelap";
+});
